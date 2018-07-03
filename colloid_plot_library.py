@@ -115,33 +115,33 @@ def get_input_data(filename):
 
         #print(input_data_strings) #= di.get_data(file,2,sep=' ')
         density          = float(input_data_strings[0][1])
-        small_density    = float(input_data_strings[1][1])
-        large_density    = float(input_data_strings[2][1])
-        pdensity         = float(input_data_strings[3][1])
+        #small_density    = float(input_data_strings[1][1])
+        #large_density    = float(input_data_strings[2][1])
+        pdensity         = float(input_data_strings[1][1])
         
-        Sx               = [0.0,float(input_data_strings[4][1])]
-        Sy               = [0.0,float(input_data_strings[5][1])]
+        Sx               = [0.0,float(input_data_strings[2][1])]
+        Sy               = [0.0,float(input_data_strings[3][1])]
         
-        radius           = float(input_data_strings[6][1])
-        large_radius     = float(input_data_strings[7][1])
-        runtime          = int(  input_data_strings[8][1])
-        runforce         = float(input_data_strings[9][1])
-        dt               = float(input_data_strings[10][1])
+        radius           = float(input_data_strings[4][1])
+        #large_radius     = float(input_data_strings[5][1])
+        runtime          = int(  input_data_strings[5][1])
+        runforce         = float(input_data_strings[6][1])
+        dt               = float(input_data_strings[7][1])
         
-        maxtime          = int(input_data_strings[11][1])
-        writemovietime   = int(input_data_strings[12][1])
+        maxtime          = int(input_data_strings[8][1])
+        writemovietime   = int(input_data_strings[9][1])
         
-        kspring          = float(input_data_strings[13][1])
-        lookupcellsize   = float(input_data_strings[14][1])
-        potentialrad     = float(input_data_strings[15][1])
-        potentialmag     = float(input_data_strings[16][1])
-        lengthscale      = float(input_data_strings[17][1])
-        drivemag         = float(input_data_strings[18][1])
-        drivefrq         = float(input_data_strings[19][1])
-        decifactor       = int(  input_data_strings[20][1])
-        restart          = int(  input_data_strings[21][1])
-        drive_step_time  = int(  input_data_strings[22][1]) 
-        drive_step_force = float(input_data_strings[23][1])
+        kspring          = float(input_data_strings[10][1])
+        lookupcellsize   = float(input_data_strings[11][1])
+        potentialrad     = float(input_data_strings[12][1])
+        potentialmag     = float(input_data_strings[13][1])
+        lengthscale      = float(input_data_strings[14][1])
+        drivemag         = float(input_data_strings[15][1])
+        drivefrq         = float(input_data_strings[16][1])
+        decifactor       = int(  input_data_strings[17][1])
+        restart          = int(  input_data_strings[18][1])
+        drive_step_time  = int(  input_data_strings[19][1]) 
+        drive_step_force = float(input_data_strings[20][1])
         
         return(Sx, Sy, radius, maxtime, writemovietime )
 
